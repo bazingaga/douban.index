@@ -1,0 +1,388 @@
+/*总体*/
+a{
+	text-decoration: none;
+}
+a:link{
+	/*浏览器默认我是打开了链接，所以使用了visited的样式*/
+	color: #37a;
+}
+
+ul li{
+	list-style-type: none;
+	display: inline-block;
+}
+body{
+	font-size: 12px;
+	padding:0;
+	margin: 0
+}
+/*关于字体颜色：日记作者，活动时间，参加人数*/
+.color_999{
+	color: #999;
+}
+/*关于电影部分链接hover背景色字体色反转*/
+/*.movie_part a:hover{
+	color:white;
+	background-color: #37a;
+
+}*/
+/*关于中间部分与上文同效果*/
+.note a:hover,.note_yike ul a:hover,.hover_:hover,.left_nav a:hover,.sort_hot a:hover,.movie_name a:hover{
+	color:white;
+	background-color: #37a;
+
+}
+/*定义悬停二维码变大*/
+
+
+.wrapper .big_erwema{
+	width:100px;
+	height: 100px;
+	position: absolute;
+	left: 200px;
+	top: 100px;
+
+}
+
+/*nav_right*/
+.nav_right{
+	float: right;
+	margin-top: 2%;
+}
+.nav_right li{
+	display: inline-block;
+}
+.nav_right img{
+	width: 45px;
+	height: 25px;
+	padding:10px;
+}
+.nav_right ul{
+	margin-right: 100px;
+	margin-top: 10px;
+}
+/*------nav_left*/
+.nav_left{
+	width: 52%;
+}
+ .nav_left img.logo{
+	width: 150px;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 130px;
+}
+/*搜索框*/
+.search{
+	border:1px solid #c3c3c3;
+	width: 230px;
+	position: relative;
+	float: right;
+	margin-top: 50px;
+	margin-right: 100px;
+}
+.search input{
+	border:0;
+	width: 200px;
+	height: 100%;
+	font-size: 13px;
+	padding: 5px;
+
+}
+.search img{
+	width: 20px;
+	height: 18px;
+	font-size: 0;
+	position: absolute;
+	top: 3px;
+	
+}
+/*这里还是使用了自适应布局，但是我添加了一个min，小一点会挤一下，在小就不动了*/
+nav,.wrapper{
+	width:100%;
+	min-width: 1200px;
+}
+.middle_part,.movie_part{
+	width: 1000px;
+}
+.wrapper{
+	overflow: hidden;
+	position: relative;
+	position: relative;
+	height: 225px;
+	background: url(img/app.png)no-repeat 40px 30px ;
+	background-position:15% ;
+	/*什么颜色？*/
+	background-color:#e8edf1;
+	margin-top: 20px;
+}
+.login{
+	float: right;
+	margin-right: 100px;	/*这里先改成px*/
+	margin-top: 20px;
+
+}
+fieldset{
+	border:0;
+
+}
+/*登陆框样式*/
+.item{
+	padding: 8px;
+	margin-top: 4px;
+	width: 178px;
+}
+#captcha_image{
+	width: 158px;
+	height: 35px;
+}
+.app{
+	/*使用相对定位会出现滚动轴，因为相对定位保留原来位置，页面流宽度变长，出现滚动轴*/
+	
+position: absolute;
+	left: 30%;
+	top: 20%;
+}
+.app a{
+	display: inline-block;
+	padding: 0 22px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: #3ba354;
+    color: #fff;
+    line-height: 30px;
+}
+/*中间部分样式*/
+.middle_part{
+	margin: 0 auto;
+}
+
+.ad{
+	margin: 40px	auto;
+	width: 100%;
+	height: 90px;
+}
+.pic_left{
+	width: 40%;
+}
+.pic_left ul{
+	margin:-10px 0 0 -40px;
+}
+.pic_left li{
+	margin: 10px 0 0 10px;
+}
+.pic img{
+	width: 170px;
+	height: 170px;
+
+}
+.note_yike{
+	float: right;
+	width: 60%;
+	height: 400px;
+}
+.note{
+	width: 50%;
+}
+.note ul li{
+	/*li换行*/
+	display: block;
+	margin-top: 12px;
+}
+.yike{
+	float: right;
+	margin-top: -40px;
+}
+.yike img{
+
+	width: 265px;
+	height: 110px;
+}
+.yike ul{
+	padding: 0;
+}
+.yike li{
+	display: inline;
+}
+
+/*定义线上活动中的行间距*/
+.yike .title ,.yike .describe,.yike .number{
+	margin-top: 10px;
+}
+/*电影部分开始*/
+
+.movie_part{
+	background-color: #f7f7f7;
+	width: 100%;
+	height: 1000px;
+}
+.movie_middle{
+	width: 1000px;
+	height: 800px;
+	margin:0 auto;
+}
+.left_nav{
+	width: 15%;
+	height: 400px;
+
+}
+/*电影两字的大小*/
+.left_nav h2{
+	font-size: 24px;
+}
+
+.pic_sort{
+	width: 85%;
+	height: 400px;
+	float: right;
+}
+.sort_hot{
+	width: 300px;
+	float: right;
+}
+/*将导航栏与右边热门对齐*/
+.left_nav{
+	margin-top: 50px;
+	padding-top: 40px;
+}
+.middle_pic,.sort_hot{
+	padding-top: 50px;
+}
+/*将导航栏靠向浏览器左边框*/
+.left_nav ul{
+	padding-left: 0;
+	font-size: 16px;
+}
+/*电影图左边框对齐*/
+.moviepic_list ul,.wrap_list ul,.wrap_list2 ol{
+	padding-left: 0;
+	margin-left: 0;
+}
+/*电影坐导航恢复成inline*/
+.left_nav li{
+	display: block;
+	margin-top: 10px;
+}
+/*右导航列表的外层div*/
+.wrap_list li{
+	width: 4em;
+    margin-top: 4px;
+    text-align: left;
+	
+}
+/*电影名字居中*/
+div.movie_name {
+	text-align: center;
+}
+/*电影名字与上下元素的间距*/
+.movie_name a{
+	line-height: 30px;
+	color: black;
+}
+a.choose_set{
+	margin-left: 12px;
+	margin-top: 8px;
+}
+.wrap_list2 ol li{
+	margin-bottom: 6px;
+    padding-bottom: 5px;
+    list-style-type: decimal;
+    /*使10数字1对齐9*/
+    list-style-position: inside;
+    border-bottom: 1px solid #eaeaea;
+}
+		/*调整图片之间距离，使一行放4个图片*/
+.moviepic_list li{
+	margin: 10px;
+}
+/*评分斜体字样式*/
+i{
+	margin-left: 4px;
+    color: #f40;
+}
+/*评分星星图片*/
+.moviepic_list span{
+	display: inline-block;
+
+    zoom: 1;
+    width: 59px;
+    height: 11px;
+    background: url(img/star.jpg) no-repeat top left;
+    background-size: 55px 11px;
+    position: relative;
+    left: 5px;
+}
+/*购票选座*/
+.choose_set{
+	background: #1c8bd0;
+    color: white;
+    display: inline-block;
+    zoom: 1;
+    vertical-align: middle;
+    padding: 2px 10px;
+    border-radius: 2px;
+}
+/*购票选座的链接link*/
+a.choose_set:link{
+	color: white;
+}
+
+/*nav*/
+
+.app a{
+	background: #3ca353;
+    color: #FFF;
+    display: inline-block;
+    padding: 1px 21px 1px;
+    margin-right: 2px;
+    vertical-align: top;
+    border-radius: 2px;
+    font-size: 13px;
+}
+img.erweima{
+	display: inline-block;
+    width: 35px;
+    height: 35px;
+    position: relative;
+    top:8px;
+}
+/*登陆*/
+input.submit{
+    padding: 0 22px;
+    height: 30px;
+    font-size: 13px;
+    border: 0;
+    border-radius: 2px;
+    margin-right: 10px;
+    margin-top: 10px;
+    background: #3ba354;
+    color: #fff;
+}
+/*注册*/
+.submit a{
+	color: #ef735f;
+	/*与登陆框对齐*/
+	vertical-align:top;
+	display: inline-block;
+    padding: 5px 21px 5px;
+    margin-right: 15px;
+    margin-top: 10px;
+    border-radius: 2px;
+    border: 1px solid #ef735f;
+    font-size: 13px;
+    color: #ef735f;
+    line-height:
+}
+/*登陆框位置*/
+fieldset{
+	margin-right:150px;
+}
+h2{
+	    font: 15px Arial,Helvetica,sans-serif;
+    color: #072;
+    margin: 0 0 12px 0;
+    line-height: 150%;
+}
+/*热点内容区*/
